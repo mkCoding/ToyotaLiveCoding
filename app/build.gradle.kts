@@ -84,6 +84,7 @@ dependencies {
     //2. Coroutines/Flows
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0") //core
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.0") //coroutine extensions
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2")
 
     //3. WorkManager
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
@@ -98,7 +99,6 @@ dependencies {
 
     //OkHttp
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
-
 
     //5. Dagger/Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
@@ -117,6 +117,7 @@ dependencies {
     //8. JUnit(added by default), mockk, Mockito
     //mockk - mocking objects in Unit Test
     testImplementation("io.mockk:mockk:1.13.5")
+
     testImplementation("androidx.arch.core:core-testing:2.2.0")
 
     //Mockito - Creating and mocking object in Unit Test
@@ -126,6 +127,7 @@ dependencies {
 
     //9. Compose Coil library - Loading and displaying image in Compose
     implementation ("io.coil-kt:coil-compose:1.4.0")
+
 
 
 
