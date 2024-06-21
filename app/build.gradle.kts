@@ -85,6 +85,7 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0") //core
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.0") //coroutine extensions
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test-jvm:1.6.0")
 
     //3. WorkManager
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
@@ -105,8 +106,11 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.51.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
-    //6. Jetpack Compose Navigation
+    //6. Jetpack Compose
     implementation ("androidx.navigation:navigation-compose:2.7.7")
+    implementation ("androidx.compose.ui:ui:1.1.0")
+    implementation ("androidx.compose.material3:material3:1.2.0-rc01")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
 
     //7. Lifecycle / view model/ compose kotlin extensions
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
@@ -117,7 +121,6 @@ dependencies {
     //8. JUnit(added by default), mockk, Mockito
     //mockk - mocking objects in Unit Test
     testImplementation("io.mockk:mockk:1.13.5")
-
     testImplementation("androidx.arch.core:core-testing:2.2.0")
 
     //Mockito - Creating and mocking object in Unit Test
